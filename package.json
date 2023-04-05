@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.3",
+    "@radix-ui/react-radio-group": "^1.1.2",
     "@types/styled-components": "^5.1.26",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
@@ -17,6 +19,7 @@
     "styled-components": "^5.3.9"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
