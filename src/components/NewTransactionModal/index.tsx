@@ -12,7 +12,7 @@ import {
 } from './styles'
 import { Controller, useForm } from 'react-hook-form'
 import { TransactionsContext } from '../../contexts/TransactionsContext'
-import { useContext } from 'react'
+import { useContextSelector } from 'use-context-selector'
 
 const newTransactionSchema = z.object({
   description: z.string(),
@@ -24,7 +24,12 @@ const newTransactionSchema = z.object({
 type NewTransactionFormInputs = z.infer<typeof newTransactionSchema>
 
 export function NewTransactionModal() {
-  const { createTransaction } = useContext(TransactionsContext)
+  const createTransaction = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.createTransaction
+    },
+  )
 
   const {
     control,
@@ -68,7 +73,7 @@ export function NewTransactionModal() {
             {...register('description')}
           />
           <input
-            type="text"
+            type="number"
             placeholder="Preço"
             required
             {...register('price', { valueAsNumber: true })}

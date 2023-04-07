@@ -55,6 +55,22 @@
       "type": "outcome",
       "createdAt": "2023-04-07T18:12:36.784Z",
       "id": 7
+    },
+    {
+      "description": "Novo",
+      "price": 45445,
+      "category": "teste",
+      "type": "income",
+      "createdAt": "2023-04-07T22:12:57.754Z",
+      "id": 8
+    },
+    {
+      "description": "Retirada de Investilento",
+      "price": 54247,
+      "category": "Retirada",
+      "type": "outcome",
+      "createdAt": "2023-04-07T22:13:38.207Z",
+      "id": 9
     }
   ]
 }
