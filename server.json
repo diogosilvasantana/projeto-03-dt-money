@@ -23,6 +23,38 @@
       "category": "Educação",
       "price": 2450,
       "createdAt": "2023-05-07T03:13:52.350Z"
+    },
+    {
+      "description": "Pagamento de atores",
+      "price": 200,
+      "category": "Cachê",
+      "type": "outcome",
+      "createdAt": "2023-04-07T17:55:31.089Z",
+      "id": 4
+    },
+    {
+      "description": "Recebimento Projeto Escola",
+      "price": 50000,
+      "category": "Teatro na Escola",
+      "type": "income",
+      "createdAt": "2023-04-07T18:08:55.927Z",
+      "id": 5
+    },
+    {
+      "description": "Pagamento de Luz",
+      "price": 600,
+      "category": "Contas a pagar",
+      "type": "outcome",
+      "createdAt": "2023-04-07T18:09:32.054Z",
+      "id": 6
+    },
+    {
+      "description": "Novo teste",
+      "price": 5000,
+      "category": "teste",
+      "type": "outcome",
+      "createdAt": "2023-04-07T18:12:36.784Z",
+      "id": 7
     }
   ]
 }

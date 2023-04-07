@@ -43,15 +43,21 @@ export const Content = styled(Dialog.Content)`
     button[type='submit'] {
       height: 50px;
       border: 0;
+      border-radius: 6px;
       background: ${(props) => props.theme['green-500']};
       color: ${(props) => props.theme.white};
       font-weight: bold;
       padding: 0 1.25rem;
       margin-top: 1.5rem;
 
-      &:hover {
+      &:not(:disabled):hover {
         background: ${(props) => props.theme['green-700']};
         transition: background-color 0.2s;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
       }
     }
   }
